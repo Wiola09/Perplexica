@@ -39,11 +39,6 @@ export const getAvailableChatModelProviders = async () => {
           modelName: 'gpt-4o',
           temperature: 0.7,
         }),
-        'GPT-4 omni jupi': new ChatOpenAI({
-          openAIApiKey,
-          modelName: 'gpt-4opa',
-          temperature: 0.7,
-        }),
       };
     } catch (err) {
       logger.error(`Error loading OpenAI models: ${err}`);
